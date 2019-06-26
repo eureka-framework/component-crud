@@ -1,0 +1,27 @@
+{
+  "name": "eureka/component-crud",
+  "description": "Define CRUD methods",
+  "type": "library",
+  "license": "MIT",
+
+  "authors": [
+    {
+      "name": "Romain Cottard",
+      "role": "Developer"
+    },
+    {
+      "name": "Pierre-Olivier Dézard",
+      "role": "Developer"
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "Eureka\\Component\\Crud\\": "./src"
+    }
+  },
+
+  "require": {
+    "psr/http-message": "^1.0"
+  }
+}
