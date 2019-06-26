@@ -20,22 +20,22 @@ class Result implements ResultInterface
     /** @var array $errors */
     private $errors;
 
-    /** @var object $entity */
+    /** @var object|null $entity */
     private $entity;
 
     /**
      * Result constructor.
-     * @param object $entity
+     * @param object|null $entity
      * @param array $errors
      */
-    public function __construct($entity, array $errors)
+    public function __construct($entity = null, array $errors = [])
     {
         $this->entity = $entity;
         $this->errors = $errors;
     }
 
     /**
-     * @return object
+     * @return object|null
      */
     public function getEntity()
     {
